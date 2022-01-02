@@ -7,6 +7,9 @@ public class guia_5_14 {
 
     public static void main(String[] args) {
 
+        boolean flag;
+        flag = false;
+
         Scanner leer = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
 
         System.out.println("Ingrese un número positivo");
@@ -17,19 +20,18 @@ public class guia_5_14 {
 
         double calc;
 
-        int opcion = 0;
-
-        do {
+        while (!flag) {
 
             System.out.println("---MENU---");
             System.out.println("1.SUMAR");
             System.out.println("2.RESTAR");
             System.out.println("3.MULTIPLICAR");
-            System.out.println("4.DIVIDR");
+            System.out.println("4.DIVIDIR");
             System.out.println("5.SALIR");
             System.out.println("Elegir una opcion");
-            opcion = leer.nextInt();
-
+            System.out.println("----------");
+            int opcion = leer.nextInt();
+            String opc;
             switch (opcion) {
 
                 case 1:
@@ -51,8 +53,21 @@ public class guia_5_14 {
                     calc = num1 / num2;
                     System.out.println("La division de los números es " + calc);
                     break;
+
+                case 5:
+                    System.out.println("Salir? \n S/N");
+                    opc = leer.next();
+                    opc = opc.toUpperCase();
+                    switch (opc) {
+                        case "S":
+                            flag = true;
+                            System.out.println("Adios!");
+                            break;
+                        default:
+                            break;
+                    }
             }
 
-        } while (opcion != 5);
+        }
     }
 }
