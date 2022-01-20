@@ -2,14 +2,13 @@
 Realice un programa que compruebe si una matriz dada es anti simétrica. Se dice
 que una matriz A es anti simétrica cuando ésta es igual a su propia traspuesta, pero
 cambiada de signo. Es decir, A es anti simétrica si A = -AT
-. La matriz traspuesta de
-una matriz A se denota por AT y se obtiene cambiando sus filas por columnas (o
+La matriz traspuesta de una matriz A se denota por AT y se obtiene cambiando sus filas por columnas (o
 viceversa).
  */
 package guia_n5_24;
 
-/*import java.util.Locale;
-import java.util.Scanner;*/
+//import java.util.Locale;
+//import java.util.Scanner;
 import java.util.Arrays;
 
 public class guia_5_24 {
@@ -17,7 +16,11 @@ public class guia_5_24 {
     public static void main(String[] args) {
 
         /*Scanner scanner = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);*/
-        int[][] matriz = {{0, -2, 4}, {2, 0, 2}, {-4, -2, 0}};
+        int[][] matriz = {
+            {0, -2,  4},
+            {2, 0,   2},
+            {-4, -2, 0}
+        };
         int[][] matrizT = new int[3][3];
         int[][] matrizN = new int[3][3];
 
@@ -25,7 +28,7 @@ public class guia_5_24 {
         mostrarMatriz(matriz);
         System.out.println("La transpuesta de la matriz es:");
         transpuesta(matriz, matrizT);
-        mostrarMatrizT(matrizT);
+        mostrarMatriz(matrizT);
         //System.out.println("La matriz cambiada de signo es:");
         cambiarSigno(matrizN, matriz);
         // mostrarMatrizN(matrizN);
@@ -66,7 +69,7 @@ public class guia_5_24 {
         }
     }
 
-    public static void mostrarMatrizT(int[][] matrizT) {
+    /*public static void mostrarMatrizT(int[][] matrizT) {
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -78,7 +81,7 @@ public class guia_5_24 {
         }
         System.out.print("\n");
 
-    }
+    }*/
 
     public static void cambiarSigno(int[][] matrizN, int[][] matriz) {
 

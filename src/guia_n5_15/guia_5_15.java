@@ -19,15 +19,14 @@ public class guia_5_15 {
 
         int numero; //creamos la variable numero
 
-        for (int i = 0; i <= 19; i += 1) {//for que recorra 20 entradas con paso 1 iniciando en 0
+        for (int i = 0; i < 20; i++) {//for que recorra 20 entradas con paso 1 iniciando en 0
+            System.out.println("Ingrese el valor " + (i+1));
 
             numero = scanner.nextInt(); //acá ingresamos los números a sumar
-            
+
             if (numero > 0) { //condicion para que no sume números negativos
                 acumulador = acumulador + numero; //se suman los números ingresados
-            }
-
-            else if (numero == 0) {//un if para que si el número ingresado es 0, se termine el programa
+            } else if (numero == 0) {//un if para que si el número ingresado es 0, se termine el programa
 
                 System.out.println("Se capturó el número 0");//imprime por pantalla que capturó el cero
 

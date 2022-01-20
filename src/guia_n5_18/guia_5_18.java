@@ -18,51 +18,25 @@ public class guia_5_18 {
 
         Scanner scanner = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
 
-        System.out.println("Ingrese 4 números de entre 1 y 20");
+        int nro;
 
-        int num1, num2, num3, num4;
+        for (int i = 0; i  <  4; i++) {
+            do {
+                System.out.println("Ingrese el valor " + (i + 1) + " (1-20): ");
+                nro = scanner.nextInt();
+            } while (nro < 1 || nro > 20);
 
-        num1 = scanner.nextInt();
-        num2 = scanner.nextInt();
-        num3 = scanner.nextInt();
-        num4 = scanner.nextInt();
-        
-        if (num1>0 && num1<21){
-            System.out.print(num1+" ");
-            for (int i=0; i<num1; i++){
+            for (int j=0; j  <  nro; j++) {
+                if (j == 0) {
+                    System.out.print(nro+" "
+                            + "");
+                }
                 System.out.print("*");
             }
-        }else{
-            System.out.print("El número ingresado no es válido");
+            System.out.println();
+
         }
-        System.out.println();
-        
-        if (num2>0 && num2<21){
-            System.out.print(num2+" ");
-            for (int i=0; i<num2; i++){
-                System.out.print("*");
-            }
-        }else{
-            System.out.print("El número ingresado no es válido");
-        }
-        System.out.println();
-        if (num3>0 && num3<21){
-            System.out.print(num3 + " ");
-            for (int i=0; i<num3; i++){
-                System.out.print("*");
-            }
-        }else{
-            System.out.print("El número ingresado no es válido");
-        }
-        System.out.println();
-        if (num4>0 && num4<21){
-            System.out.print(num4 + " ");
-            for (int i=0; i<num4; i++){
-                System.out.print("*");
-            }
-        }else{
-            System.out.println("El número ingresado no es válido");
-        }
-        System.out.println();
+
     }
+
 }

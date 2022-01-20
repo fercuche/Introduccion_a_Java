@@ -50,17 +50,19 @@ public class guia_5_23 {
 
     }
 
-    public static void transpuesta(int[][] matriz,int[][] matrizT) {
+    public static void transpuesta(int[][] matriz, int[][] matrizT) {
 
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                
-                matrizT [i][j] = matriz [j][i];
+
+                matrizT[i][j] = matriz[j][i];
 
             }
 
         }
-    }    public static void mostrarMatrizT(int[][] matrizT) {
+    }
+
+    public static void mostrarMatrizT(int[][] matrizT) {
 
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
@@ -73,5 +75,5 @@ public class guia_5_23 {
         System.out.print("\n");
 
     }
-    
+
 }

@@ -26,7 +26,7 @@ public class guia_5_extra9 {
         int residuo = dividendo - divisor;
         int contador = 1;
 
-        while (divisor < residuo && residuo > 0) {
+        while (divisor <= residuo && residuo >=0) {
             residuo = residuo - divisor;
             contador = contador + 1;
 

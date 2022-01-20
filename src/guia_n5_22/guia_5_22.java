@@ -20,9 +20,7 @@ public class guia_5_22 {
         int[] vector = new int[N];
 
         rellenar(N, vector);
-
         mostrarVector(N, vector);
-
         contarDigitos(N, vector);
 
     }
@@ -31,8 +29,7 @@ public class guia_5_22 {
 
         for (int i = 0; i < N; i++) {
 
-            aleatorio[i] = (int) (Math.random() * 99999);
-
+            aleatorio[i] = (int) (Math.random() * 999);
         }
     }
 
@@ -42,7 +39,6 @@ public class guia_5_22 {
         for (int i = 0; i < N; i++) {
 
             System.out.print(aleatorio[i] + " ");
-
         }
         System.out.print("]\n");
 
@@ -64,19 +60,19 @@ public class guia_5_22 {
             switch (digitos) {
 
                 case (1):
-                    contador1 = contador1 + 1;
+                    contador1++;
                     break;
                 case (2):
-                    contador2 = contador2 + 1;
+                    contador2++;
                     break;
                 case (3):
-                    contador3 = contador3 + 1;
+                    contador3++;
                     break;
                 case (4):
-                    contador4 = contador4 + 1;
+                    contador4++;
                     break;
                 case (5):
-                    contador5 = contador5 + 1;
+                    contador5++;
                     break;
             }
 

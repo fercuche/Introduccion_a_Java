@@ -27,7 +27,6 @@ public class guia_5_21 {
         int numero = scanner.nextInt();
 
         mostrarVector(N, aleatorio);
-
         buscar(N, aleatorio, numero);
 
     }
@@ -60,13 +59,10 @@ public class guia_5_21 {
         for (int i = 0; i < N; i++) {
 
             if (numero == aleatorio[i]) {
-                contador = contador + 1;
-                System.out.println("El numero " + numero + " se encuentra en la posición " + i);
-
+                contador++;
+                System.out.println("El numero " + numero + " se encuentra en la posición [" + i + "]");
             }
-
         }
-
         if (contador == 0) {
             System.out.println("El número no se encuentra en el arreglo");
         } else {
@@ -75,3 +71,4 @@ public class guia_5_21 {
     }
 
 }
+    

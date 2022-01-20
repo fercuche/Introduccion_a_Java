@@ -14,7 +14,7 @@ public class guia_5_10 {
 
         String frase = leer.nextLine();
 
-        if (frase.substring(0, 1).equals("A")) {
+        if (frase.substring(0, 1).equalsIgnoreCase("A")) {
             System.out.println("Correcto");
 
         } else {

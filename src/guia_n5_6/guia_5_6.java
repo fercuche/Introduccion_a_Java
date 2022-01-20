@@ -16,8 +16,10 @@ public class guia_5_6 {
 
         if (numero1 < numero2) {
             System.out.println("El mayor número es " + numero2);
-        } else {
+        } else if (numero1 > numero2) {
             System.out.println("El mayor número es " + numero1);
+        } else {
+            System.out.println("Los números son iguales");
         }
     }
 

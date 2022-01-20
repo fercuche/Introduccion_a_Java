@@ -21,9 +21,7 @@ public class guia_5_16 {
 
         Scanner scanner = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
 
-        int correctas = 0;
-
-        int incorrectas = -1;
+        int correctas = 0, incorrectas = -1;    
 
         String frase = "";
 
@@ -35,10 +33,10 @@ public class guia_5_16 {
 
             frase = scanner.nextLine();
 
-            if (frase.length() == 5 && "X".equals(frase.substring(0, 1)) && "O".equals(frase.substring(4, 5))) {
-                correctas = correctas + 1;
+            if (frase.length() == 5 && "X".equalsIgnoreCase(frase.substring(0, 1)) && "O".equalsIgnoreCase(frase.substring(4, 5))   ) {
+                correctas++;
             } else {
-                incorrectas = incorrectas + 1;
+                incorrectas++;
             }
 
         } while (!frase.equals("&&&&&"));

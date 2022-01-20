@@ -23,18 +23,18 @@ public class guia_5_20 {
 
     public static void rellenarVector(int[] vector) {
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < vector.length; i++) {
             
-            vector[i] += i;
+            vector[i] += i+1;
         }
 
     }
 
     public static void mostrarVector(int[] vector) {
         
-        for (int i=0; i<100; i++ ){
+        for (int i=vector.length-1; i>=0; i--){
             
-            System.out.println(vector[i]);
+            System.out.print(vector[i]+" ");
         }
 
     }
